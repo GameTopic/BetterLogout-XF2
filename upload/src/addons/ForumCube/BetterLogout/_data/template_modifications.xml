@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<template_modifications>
+  <modification type="public" template="account_preferences" modification_key="add_field_account_preferences" description="add field account" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<xf:if is="$xf.visitor.canChangeStyle()">]]></find>
+    <replace><![CDATA[<xf:selectrow name="user[logout_options]" value="{$xf.visitor.logout_options}"
+			  label="{{ phrase('xm_logout_option') }}">
+	<xf:option value="0">{{ phrase('xm_use_default') }}</xf:option>
+	<xf:option value="1">{{ phrase('xm_logout_this_device') }}</xf:option>
+	<xf:option value="2">{{ phrase('xm_logout_all_device') }}</xf:option>
+</xf:selectrow>
+$0]]></replace>
+  </modification>
+  <modification type="public" template="account_visitor_menu" modification_key="add_over_lay_logout" description="add overlay logout" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[<a href="{{ link('logout', null, {'t': csrf_token()}) }}" class="menu-linkRow">{{ phrase('log_out') }}</a>]]></find>
+    <replace><![CDATA[<xf:if is="$xf.visitor.logout_options == 0">
+	<a href="{{ link('logout', null, {'t': csrf_token()}) }}"  data-xf-click="overlay" class="menu-linkRow">{{ phrase('log_out') }}</a>
+<xf:else/>
+	$0
+</xf:if>]]></replace>
+  </modification>
+</template_modifications>

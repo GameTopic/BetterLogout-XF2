@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates>
+  <template type="public" title="XMBL_logout" version_id="2000000" version_string="2.0.0"><![CDATA[<xf:title>{{ phrase('logout') }}</xf:title>
+
+<xf:form action="{{ link('logout') }}" ajax="true" class="block" data-force-flash-message="true">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:radiorow name="logout_options" value="1"
+						 label="{{ phrase('xm_logout_option') }}">
+				<xf:option value="1"label="{{ phrase('xm_bl_log_me_out_on_this_device_only') }}"/>
+				<xf:option value="2"label="{{ phrase('xm_bl_log_me_out_on_all_devices') }}"/>
+			</xf:radiorow>
+			<xf:checkboxrow>
+				<xf:option name="dont_ask_again">{{ phrase('xm_bl_dont_ask_me_again') }}</xf:option>
+			</xf:checkboxrow> 
+		</div>
+		<xf:submitrow icon="save" sticky="true" />
+	</div>
+</xf:form>]]></template>
+</templates>

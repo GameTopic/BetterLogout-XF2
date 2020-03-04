@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="xm_bl_dont_ask_me_again" version_id="2000000" version_string="2.0.0"><![CDATA[Don't ask me again]]></phrase>
+  <phrase title="xm_bl_log_me_out_on_all_devices" version_id="2000000" version_string="2.0.0"><![CDATA[Logout all device]]></phrase>
+  <phrase title="xm_bl_log_me_out_on_this_device_only" version_id="2000000" version_string="2.0.0"><![CDATA[Logout on this device only]]></phrase>
+  <phrase title="xm_bl_you_have_been_logged_out_on_all_devices" version_id="2000000" version_string="2.0.0"><![CDATA[You have been logged out on all devices]]></phrase>
+  <phrase title="xm_bl_you_have_been_logged_out_on_this_device" version_id="2000000" version_string="2.0.0"><![CDATA[You have been logged out on this device]]></phrase>
+  <phrase title="xm_logout_all_device" version_id="2000000" version_string="2.0.0"><![CDATA[Logout all devices]]></phrase>
+  <phrase title="xm_logout_option" version_id="2000000" version_string="2.0.0"><![CDATA[Logout options]]></phrase>
+  <phrase title="xm_logout_this_device" version_id="2000000" version_string="2.0.0"><![CDATA[Logout this device]]></phrase>
+  <phrase title="xm_use_default" version_id="2000000" version_string="2.0.0"><![CDATA[Use default logout]]></phrase>
+</phrases>
