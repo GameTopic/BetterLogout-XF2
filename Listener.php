@@ -1,13 +1,13 @@
 <?php
 
-namespace ForumCube\BetterLogout;
+namespace nick97\BetterLogout;
 
 /**
  * Class Listener
  * 
  * This class declares code event listeners for the add-on.
  * 
- * @package ForumCube\BetterLogout
+ * @package nick97\BetterLogout
  */
 class Listener
 {

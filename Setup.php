@@ -1,6 +1,6 @@
 <?php
 
-namespace ForumCube\BetterLogout;
+namespace nick97\BetterLogout;
 
 use XF\AddOn\AbstractSetup;
 use XF\AddOn\StepRunnerInstallTrait;

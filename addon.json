@@ -1,0 +1,26 @@
+{
+    "legacy_addon_id": "",
+    "title": "[NICK97] Better Logout",
+    "description": "Give users the option to logout from all devices at once.",
+    "version_id": 2020070,
+    "version_string": "2.2.0",
+    "dev": "NICK97",
+    "dev_url": "https://xen-shop.com",
+    "faq_url": "https://xen-shop.com/faq",
+    "support_url": "https://xen-shop.com/contact",
+    "extra_urls": {
+        "Gaming Community": "https://cities-mods.com",
+        "Donate": "https://www.xen-shop.com/donate/"
+    },
+    "require": {
+        "XF": [
+            2020070,
+            "XenForo 2.2.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
+    },
+    "icon": "fa-sign-out"
+}

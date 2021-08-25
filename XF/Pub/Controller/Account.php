@@ -1,6 +1,6 @@
 <?php
 
-namespace ForumCube\BetterLogout\XF\Pub\Controller;
+namespace nick97\BetterLogout\XF\Pub\Controller;
 use XF\Mvc\Reply\View;
 class Account extends XFCP_Account
 {

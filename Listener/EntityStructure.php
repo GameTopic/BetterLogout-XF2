@@ -1,6 +1,6 @@
 <?php
 
-namespace ForumCube\BetterLogout\Listener;
+namespace nick97\BetterLogout\Listener;
 
 use XF\Mvc\Entity\Entity;
 

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace ForumCube\BetterLogout\XF\Pub\Controller;
+namespace nick97\BetterLogout\XF\Pub\Controller;
 
 use XF\Mvc\ParameterBag;
 use XF\Mvc\Reply\AbstractReply;
