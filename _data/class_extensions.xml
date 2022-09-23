@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <class_extensions>
+  <extension from_class="nick97\recentlyuseddevices\Pub\Controller\Device" to_class="nick97\BetterLogout\nick97\recentlyuseddevices\Pub\Controller\Device" execute_order="10" active="1"/>
+  <extension from_class="XF\Admin\Controller\User" to_class="nick97\BetterLogout\XF\Admin\Controller\User" execute_order="10" active="1"/>
+  <extension from_class="XF\Entity\User" to_class="nick97\BetterLogout\XF\Entity\User" execute_order="10" active="1"/>
   <extension from_class="XF\Pub\Controller\Account" to_class="nick97\BetterLogout\XF\Pub\Controller\Account" execute_order="10" active="1"/>
   <extension from_class="XF\Pub\Controller\Logout" to_class="nick97\BetterLogout\XF\Pub\Controller\Logout" execute_order="10" active="1"/>
 </class_extensions>

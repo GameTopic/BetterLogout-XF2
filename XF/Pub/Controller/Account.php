@@ -1,7 +1,6 @@
 <?php
 
 namespace nick97\BetterLogout\XF\Pub\Controller;
-use XF\Mvc\Reply\View;
 class Account extends XFCP_Account
 {
 	protected function preferencesSaveProcess(\XF\Entity\User $visitor)
@@ -10,15 +9,12 @@ class Account extends XFCP_Account
 
 		$input = $this->filter([
 			'user' => [
-				'logout_options' => 'uint',
+				'xm_bl_logout_type' => 'uint',
 			]
-			
 		]);
+
 		/** @var \XF\Entity\UserProfile $userProfile */
 		$form->basicEntitySave($visitor, $input['user']);
 		return $form;
 	}
- 
-
-	 
 } 

@@ -2,20 +2,36 @@
 <template_modifications>
   <modification type="public" template="account_preferences" modification_key="add_field_account_preferences" description="add field account" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<xf:if is="$xf.visitor.canChangeStyle()">]]></find>
-    <replace><![CDATA[<xf:selectrow name="user[logout_options]" value="{$xf.visitor.logout_options}"
-			  label="{{ phrase('xm_logout_option') }}">
-	<xf:option value="0">{{ phrase('xm_use_default') }}</xf:option>
-	<xf:option value="1">{{ phrase('xm_logout_this_device') }}</xf:option>
-	<xf:option value="2">{{ phrase('xm_logout_all_device') }}</xf:option>
-</xf:selectrow>
-$0]]></replace>
+    <replace><![CDATA[<xf:if is="$xf.visitor.hasPermission('general', 'xm_bl_use')">
+			<xf:selectrow name="user[xm_bl_logout_type]" value="{$xf.visitor.xm_bl_logout_type}"
+							  label="{{ phrase('xm_logout_option') }}">
+					<xf:option value="0">{{ phrase('xm_use_default') }}</xf:option>
+					<xf:option value="1">{{ phrase('xm_logout_this_device') }}</xf:option>
+					<xf:option value="2">{{ phrase('xm_logout_all_device') }}</xf:option>
+				</xf:selectrow>
+			</xf:if>
+
+			$0]]></replace>
   </modification>
   <modification type="public" template="account_visitor_menu" modification_key="add_over_lay_logout" description="add overlay logout" execution_order="10" enabled="1" action="str_replace">
     <find><![CDATA[<a href="{{ link('logout', null, {'t': csrf_token()}) }}" class="menu-linkRow">{{ phrase('log_out') }}</a>]]></find>
-    <replace><![CDATA[<xf:if is="$xf.visitor.logout_options == 0">
+    <replace><![CDATA[<xf:if is="$xf.visitor.hasPermission('general', 'xm_bl_use') && $xf.visitor.xm_bl_logout_type == 0">
 	<a href="{{ link('logout', null, {'t': csrf_token()}) }}"  data-xf-click="overlay" class="menu-linkRow">{{ phrase('log_out') }}</a>
 <xf:else/>
 	$0
 </xf:if>]]></replace>
+  </modification>
+  <modification type="public" template="n97_devices" modification_key="xm_bl_n97_devices_button" description="Add overlay arg" execution_order="10" enabled="1" action="str_replace">
+    <find><![CDATA[href="{{ link('devices/logout', $device) }}"]]></find>
+    <replace><![CDATA[$0 data-xf-click="overlay"]]></replace>
+  </modification>
+  <modification type="admin" template="user_edit" modification_key="xm_bl_user_edit_button" execution_order="30000" enabled="1" action="str_replace">
+    <find><![CDATA[<!--[XF:actions_menu:bottom]-->]]></find>
+    <replace><![CDATA[<xf:if is="$xf.visitor.hasAdminPermission('xm_bl_logout') && $user.last_activity">
+					<a href="{{ link('users/logout', $user) }}" class="menu-linkRow" data-xf-click="overlay">
+						{{ phrase('xm_bl_logout_user') }}
+					</a>
+				</xf:if>
+				$0]]></replace>
   </modification>
 </template_modifications>

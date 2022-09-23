@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
+  <phrase title="admin_permission.xm_bl_logout" version_id="2020100" version_string="2.2.1"><![CDATA[[NICK97] Better Logout: Logout users]]></phrase>
+  <phrase title="permission.general_xm_bl_use" version_id="2020091" version_string="2.2.0 Patch Level 1"><![CDATA[[NICK97] Better Logout: Can use]]></phrase>
   <phrase title="xm_bl_dont_ask_me_again" version_id="2000000" version_string="2.0.0"><![CDATA[Don't ask me again]]></phrase>
   <phrase title="xm_bl_log_me_out_on_all_devices" version_id="2000000" version_string="2.0.0"><![CDATA[Logout all device]]></phrase>
   <phrase title="xm_bl_log_me_out_on_this_device_only" version_id="2000000" version_string="2.0.0"><![CDATA[Logout on this device only]]></phrase>
+  <phrase title="xm_bl_logout_user" version_id="2020100" version_string="2.2.1"><![CDATA[Logout user]]></phrase>
+  <phrase title="xm_bl_logout_user_x" version_id="2020100" version_string="2.2.1"><![CDATA[Logout user {name}]]></phrase>
+  <phrase title="xm_bl_please_confirm_that_you_want_logout_all_user_x_devices" version_id="2020100" version_string="2.2.1"><![CDATA[Please confirm that you want logout all {name} devices]]></phrase>
   <phrase title="xm_bl_you_have_been_logged_out_on_all_devices" version_id="2000000" version_string="2.0.0"><![CDATA[You have been logged out on all devices]]></phrase>
   <phrase title="xm_bl_you_have_been_logged_out_on_this_device" version_id="2000000" version_string="2.0.0"><![CDATA[You have been logged out on this device]]></phrase>
   <phrase title="xm_logout_all_device" version_id="2000000" version_string="2.0.0"><![CDATA[Logout all devices]]></phrase>

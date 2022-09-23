@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <templates>
+  <template type="admin" title="XMBL_logout" version_id="2020100" version_string="2.2.1"><![CDATA[<xf:title>{{ phrase('xm_bl_logout_user_x', {'name': $user.username}) }}</xf:title>
+
+<xf:form action="{{ link('users/logout', $user) }}" ajax="true" class="block" data-force-flash-message="true">
+	<div class="block-container">
+		<xf:inforow rowtype="confirm">
+			{{ phrase('xm_bl_please_confirm_that_you_want_logout_all_user_x_devices', {'name': $user.username}) }}
+		</xf:inforow>
+		<xf:submitrow icon="submit" rowtype="simple" />
+	</div>
+</xf:form>]]></template>
   <template type="public" title="XMBL_logout" version_id="2000000" version_string="2.0.0"><![CDATA[<xf:title>{{ phrase('logout') }}</xf:title>
 
 <xf:form action="{{ link('logout') }}" ajax="true" class="block" data-force-flash-message="true">
@@ -13,6 +23,19 @@
 			<xf:checkboxrow>
 				<xf:option name="dont_ask_again">{{ phrase('xm_bl_dont_ask_me_again') }}</xf:option>
 			</xf:checkboxrow> 
+		</div>
+		<xf:submitrow icon="save" sticky="true" />
+	</div>
+</xf:form>]]></template>
+  <template type="public" title="XMBL_logout_device" version_id="2020102" version_string="2.2.1 2"><![CDATA[<xf:title>{{ phrase('n97_devices_signout') }}</xf:title>
+
+<xf:form action="{{ link('devices/logout', $device) }}" ajax="true" class="block" data-force-flash-message="true">
+	<div class="block-container">
+		<div class="block-body">
+			<xf:radiorow name="logout_options" value="1" label="{{ phrase('xm_logout_option') }}">
+				<xf:option value="1" label="{{ phrase('xm_bl_log_me_out_on_this_device_only') }}"/>
+				<xf:option value="2" label="{{ phrase('xm_bl_log_me_out_on_all_devices') }}"/>
+			</xf:radiorow>
 		</div>
 		<xf:submitrow icon="save" sticky="true" />
 	</div>
