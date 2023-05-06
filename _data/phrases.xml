@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <phrases>
   <phrase title="admin_permission.xm_bl_logout" version_id="2020100" version_string="2.2.1"><![CDATA[[NICK97] Better Logout: Logout users]]></phrase>
+  <phrase title="n97_betterlogout_copyright_branding" version_id="2020400" version_string="2.2.4"><![CDATA[<!DOCTYPE html>
+<html>
+<body>
+
+<a href="https://xen-shop.com" class="u-concealed" dir="ltr" target="_blank" rel="sponsored noopener" > [NICK97] Better Logout - XF2 by XenShop © 2018-2023. </a>
+
+</body>
+</html>]]></phrase>
+  <phrase title="option.n97_betterlogout_site_branding" version_id="2020400" version_string="2.2.4"><![CDATA[Remove Branding]]></phrase>
+  <phrase title="option_explain.n97_betterlogout_site_branding" version_id="2020400" version_string="2.2.4"><![CDATA[Tick this to remove branding, if you have bought branding free version.
+If not bought you can make payment <a href="https://www.paypal.com/paypalme/GameTopic/">here</a> and remove the branding]]></phrase>
+  <phrase title="option_group.n97_better_logout_options" version_id="2020302" version_string="2.2.3 Patch Level 2"><![CDATA[[NICK97] Better Logout]]></phrase>
+  <phrase title="option_group_description.n97_better_logout_options" version_id="2020302" version_string="2.2.3 Patch Level 2"><![CDATA[Option for [NICK97] Better Logout add-on]]></phrase>
   <phrase title="permission.general_xm_bl_use" version_id="2020091" version_string="2.2.0 Patch Level 1"><![CDATA[[NICK97] Better Logout: Can use]]></phrase>
   <phrase title="xm_bl_dont_ask_me_again" version_id="2000000" version_string="2.0.0"><![CDATA[Don't ask me again]]></phrase>
   <phrase title="xm_bl_log_me_out_on_all_devices" version_id="2000000" version_string="2.0.0"><![CDATA[Logout all device]]></phrase>

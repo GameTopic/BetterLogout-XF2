@@ -1,2 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<option_groups/>
+<option_groups>
+  <group group_id="n97_better_logout_options" icon="fa-sign-out" display_order="1" debug_only="0"/>
+</option_groups>
